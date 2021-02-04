@@ -1,0 +1,13 @@
+server:
+  port: 2333
+spring:
+  application:
+    name: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.198.128:3306/match?characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+mybatis:
+  # 扫描所有模块下的xml文件
+  mapper-locations: classpath*:mapper/*.xml
